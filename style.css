@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@200;300;400;600&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', 'Noto Sans TC';
+  color: white;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+}
+.container {
+  /* background-color: rgb(240, 191, 191); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+/* 只有兩個div並排的情況下 flex:1平均分配 width:50% 寬度各50%*/
+.container > div {
+  flex: 1;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.box-blue {
+  letter-spacing: 2px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+}
+.box p {
+  margin: 0;
+}
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-control small {
+  color: hsl(0, 100%, 74%);
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  opacity: 0;
+  text-align: right;
+}
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid hsl(240, 7%, 91%);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 25px;
+  display: block;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border: 1.3px solid hsl(248, 32%, 49%);
+}
+.form-control img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+}
+.form-control.error img {
+  opacity: 1;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding: 15px 25px;
+  display: block;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  box-shadow: 0 0px hsl(154, 59%, 45%);
+  border-bottom-width: 1px;
+  transform: translateY(2px);
+}
+small {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+small a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-decoration: none;
+}
+.terms a {
+  display: block;
+  text-decoration: underline;
+  /* text-align: left; */
+}
+@media screen and (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}

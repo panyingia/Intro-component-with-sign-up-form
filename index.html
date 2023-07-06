@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1>Learn to code by deliberate practice</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </div>
+    <div>
+      <!-- 這是藍色那塊 -->
+      <div class="box box-blue">
+        <p>
+          <strong>Try it free 7w days </strong>
+          then $20/mo.there after
+        </p>
+      </div>
+      <!-- 這是表單那塊 -->
+      <form class="box" id="form">
+        <div class="form-control">
+          <input type="text" id="firstname" placeholder="Janathan" />
+          <img src="./images/icon-error.svg" alt="error-icon" />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="lastname" placeholder="Lastnane" />
+          <img src="./images/icon-error.svg" alt="error-icon" />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="email" id="email" placeholder="emailAddress" />
+          <img src="./images/icon-error.svg" alt="error-icon" />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password" />
+          <img src="./images/icon-error.svg" alt="error-icon" />
+          <small></small>
+        </div>
+        <button>CLAIM YOUR FREE TRIAL</button>
+        <small class="terms">By clicking the button,you are agreeing to our
+          <a href="#">Terms and Services</a>
+        </small>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
